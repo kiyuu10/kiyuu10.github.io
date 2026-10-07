@@ -6,12 +6,13 @@
 <body>
     
     <h3>Ứng dụng của bạn</h3>
-    <iframe id="myObject" src="https://note5.cyberjutsu-lab.tech/welcome?return_url=/note" width="100%" height="300px">
-    </iframe>
+    <object id="myObject" data="https://note6.cyberjutsu-lab.tech/admin" type="text/html" width="100%" height="300px">
+    </object>
 
 </body>
 <script>
-
+    var myObject = document.getElementById("myObject");
+    console.log(myObject.contentWindow.document.cookie);
 </script>
 
 </html>
